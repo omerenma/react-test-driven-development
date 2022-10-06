@@ -1,15 +1,22 @@
-import React, {useState} from "react";
-import "../Timer.css"
+import React, { useState } from "react";
+import "../Timer.css";
 
 const Timer = () => {
-    const [minutes, setMinutes] = useState(25)
-    const [seconds, setSeconds] = useState(0)
-    const [isOn, setIsOn] = useState(false)
+	const [minutes, setMinutes] = useState(25);
+	const [seconds, setSeconds] = useState(0);
+	const [isOn, setIsOn] = useState(false);
 
-    const startTimer = () => console.log('Starting timer')
-    const stopTimer = () => console.log('Stopping timer')
-    const resetTimer = () => console.log('Resetting timer')
+	const startTimer = () => console.log("Starting timer");
+	const stopTimer = () => console.log("Stopping timer");
+	const resetTimer = () => console.log("Resetting timer");
 
-	return <div className="timer-container" name="king">Timer component</div>;
+	return (
+		<div className="timer-container" name="king">
+			<div>
+				<div>Timer component</div>
+				
+			</div>
+		</div>
+	);
 };
 export default Timer;
