@@ -1,0 +1,15 @@
+.button-container{
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0px 20px;
+    border: var(--button-border);
+    font-size: var(--button-text-size);
+}
+
+.button-container:hover {
+    cursor: pointer;
+}
+.timer-button-container{
+    display: flex;
+    margin-top: 370px;
+}

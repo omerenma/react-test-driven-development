@@ -17,6 +17,8 @@ code {
   --timer-border:1px solid #000000;
   --timer-height:70%;
   --timer-width:70%;
+  --button-border:3px solid #000000;
+  --button-text-size:2em;
 }
 
 body, div, p {
@@ -27,6 +29,7 @@ body, div, p {
 @media screen and (max-width:1024px) {
   :root{
     --timer-height:100%;
-    --timer-width:100%
+    --timer-width:100%;
+    --button-text-size:4em;
   }
 }

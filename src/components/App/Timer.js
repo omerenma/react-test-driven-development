@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import TimerButton from "./TimerButton";
+// import "./TimerButton.css"
 import "../Timer.css";
 
 const Timer = () => {
@@ -12,9 +14,12 @@ const Timer = () => {
 
 	return (
 		<div className="timer-container" name="king">
-			<div>
-				<div>Timer component</div>
-				
+			<div>Timer component</div>
+			<div className="timer-display"></div>
+			<div className="timer-button-container">
+				<TimerButton buttonAction={startTimer} buttonValue={"Start"} />
+				<TimerButton buttonAction={stopTimer} buttonValue={"Stop"} />
+				<TimerButton buttonAction={resetTimer} buttonValue={"Reset"} />
 			</div>
 		</div>
 	);

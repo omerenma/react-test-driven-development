@@ -1,11 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
+import "./TimerButton.css";
 
-export default function TimerButton() {
+function TimerButton({ buttonAction, buttonValue }) {
 	return (
-		<div>
-			<button>Start</button>
-			<button>Stop</button>
-			<button>Reset</button>
+		<div className="button-container" onClick={() => buttonAction()}>
+			<p className="button-value">{buttonValue}</p>
 		</div>
 	);
 }
+
+TimerButton.propTypes = {
+	buttonAction: PropTypes.func.isRequired,
+	buttonValue: PropTypes.string.isRequired,
+};
+export default TimerButton;
